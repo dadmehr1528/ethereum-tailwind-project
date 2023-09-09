@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "poppins";
+  src: url("./font/woff/Poppins-Light.woff") format("woff"),
+    url("./font/ttf/Poppins-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("./font/woff/Poppins-Medium.woff") format("woff"),
+    url("./font/ttf/Poppins-Medium.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("./font/woff/Poppins-Regular.woff") format("woff"),
+    url("./font/ttf/Poppins-Regular.ttf") format("ttf");
+  font-weight: 500;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: "poppins", sans-serif;
+    margin: 0;
+  }
+
+  p,
+  h1 {
+    @apply line-clamp-6 mt-7 mx-6;
+  }
+
+  .the-cards {
+    box-shadow: 4px 4px 0px rgb(209, 178, 220);
+  }
+
+  #header-img {
+    height: 78.5vh;
+  }
+
+  .first-section .second-section {
+    @apply bg-veryLightGray;
+  }
+}
